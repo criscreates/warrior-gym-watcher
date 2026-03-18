@@ -1,0 +1,24 @@
+[project]
+name = "warrior-gym-watcher"
+version = "0.1.0"
+description = "see repository README file"
+authors = [
+    {name = "Cristian Moretto",email = "cmoretto@uwaterloo.ca"}
+]
+license = {text = "see repository license file"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)",
+    "fastapi[standard] (>=0.135.1,<0.136.0)",
+    "pydantic (>=2.12.5,<3.0.0)",
+    "sqlalchemy (>=2.0.48,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
