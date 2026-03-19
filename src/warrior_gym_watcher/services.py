@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import json
-import http
 from fake_useragent import UserAgent
 
 
