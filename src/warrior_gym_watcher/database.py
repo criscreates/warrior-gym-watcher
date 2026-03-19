@@ -8,7 +8,7 @@ load_dotenv()
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
-engine = create_engine(DATABASE_URL, executemany_mode="values_only")
+engine = create_engine(DATABASE_URL, connect_args={"prepare_threshold": None})
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
